@@ -9,3 +9,4 @@ metadata_testing.py
 API/api_testing.py
 data_del/data_del.py
 devSide_UnitTesting/tables/agent_2.py
+data_del/table_queries/listing_address.sql

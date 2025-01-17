@@ -36,8 +36,7 @@ def get_id(source_id, conn):
         print(f"Error executing query: {e}")
         return None
 
-def process_files(path):
-    conn = db_conn()
+def process_files(path, conn):
     data = get_id(807, conn) 
     
     for file_path in path:
@@ -55,5 +54,6 @@ def process_files(path):
 
 path = r"C:\Users\Personal\OneDrive\Desktop\Serverless\Migrations\Paragon_API\14-PDRA2-888\Loaded"
 csv_files = glob.glob(os.path.join(path, "*.csv"))
-process_files(csv_files)
-
+conn = db_conn()
+process_files(csv_files, conn)
+conn.close()
