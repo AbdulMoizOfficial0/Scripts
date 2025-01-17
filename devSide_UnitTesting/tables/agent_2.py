@@ -22,6 +22,7 @@ def agent(cur, source_id):
     batch_id = result[0]
     agent_report = []
 
+
     agent_duplication = f'''
                         SELECT count(source_participant_id), source_participant_id
                         FROM real_estate_participant 
