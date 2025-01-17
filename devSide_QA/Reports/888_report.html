@@ -1,0 +1,309 @@
+
+    <html>
+    <head>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            .passed { color: green; }
+            .failed { color: red; }
+        </style>
+    </head>
+    <body>
+        <h1>Data Quality Report for Source ID: 888</h1>
+        <table>
+            <tr>
+                <th>Table Name</th>
+                <th>Check Name</th>
+                <th>Status</th>
+                <th>Description</th>
+            </tr>
+    
+            <tr>
+                <td>listing_description</td>
+                <td>Total Rows Counts</td>
+                <td class="failed">Failed</td>
+                <td>difference is: 911</td>
+            </tr>
+        
+            <tr>
+                <td>listing_participant_rel</td>
+                <td>Total Rows Counts</td>
+                <td class="passed">Passed</td>
+                <td>difference is: 958</td>
+            </tr>
+        
+            <tr>
+                <td>listing_real_estate_office_rel</td>
+                <td>Total Rows Counts</td>
+                <td class="passed">Passed</td>
+                <td>difference is: 958</td>
+            </tr>
+        
+            <tr>
+                <td>listing_marketing_info</td>
+                <td>Total Rows Counts</td>
+                <td class="passed">Passed</td>
+                <td>difference is: 958</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>Total Rows Counts</td>
+                <td class="passed">Passed</td>
+                <td>difference is: 958</td>
+            </tr>
+        
+            <tr>
+                <td>listing_attribute_custom</td>
+                <td>Total Rows Counts</td>
+                <td class="passed">Passed</td>
+                <td>difference is: 958</td>
+            </tr>
+        
+            <tr>
+                <td>listing_property_type_search</td>
+                <td>Total Rows Counts</td>
+                <td class="passed">Passed</td>
+                <td>difference is: 958</td>
+            </tr>
+        
+            <tr>
+                <td>Listing</td>
+                <td>Total Rows Counts</td>
+                <td class="passed">Passed</td>
+                <td>difference is: 958</td>
+            </tr>
+        
+            <tr>
+                <td>listing_attribute</td>
+                <td>Total Rows Counts</td>
+                <td class="passed">Passed</td>
+                <td>difference is: 958</td>
+            </tr>
+        
+            <tr>
+                <td>listing_p_active</td>
+                <td>Total Rows Counts</td>
+                <td class="passed">Passed</td>
+                <td>difference is: 958</td>
+            </tr>
+        
+            <tr>
+                <td>listing_attribute_2</td>
+                <td>Total Rows Counts</td>
+                <td class="passed">Passed</td>
+                <td>difference is: 958</td>
+            </tr>
+        
+            <tr>
+                <td>real_estate_participant</td>
+                <td>Test Case</td>
+                <td class="failed">Failed</td>
+                <td>full_name concatenation Check, real_estate_participant, ERROR</td>
+            </tr>
+        
+            <tr>
+                <td>real_estate_office</td>
+                <td>Test Case</td>
+                <td class="failed">Failed</td>
+                <td>Duplicate office name Check, real_estate_office, ERROR</td>
+            </tr>
+        
+            <tr>
+                <td>real_estate_office</td>
+                <td>Test Case</td>
+                <td class="failed">Failed</td>
+                <td>office_id NULL Check, real_estate_office, ERROR</td>
+            </tr>
+        
+            <tr>
+                <td>Listing_address</td>
+                <td>Test Case</td>
+                <td class="failed">Failed</td>
+                <td>parcel_id tbd/tba/none/remark/0 Check, Listing_address, ERROR</td>
+            </tr>
+        
+            <tr>
+                <td>Listing_address</td>
+                <td>Test Case</td>
+                <td class="failed">Failed</td>
+                <td>full_street_address tbd/0 Check, Listing_address, ERROR</td>
+            </tr>
+        
+            <tr>
+                <td>Listing</td>
+                <td>Test Case</td>
+                <td class="failed">Failed</td>
+                <td>Status Association check, Listing, ERROR</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>Distinct Count of community_name</td>
+                <td class="passed">Passed</td>
+                <td>Distinct Count of community_name is: 52</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>Distinct Count of subdivision_name</td>
+                <td class="passed">Passed</td>
+                <td>Distinct Count of subdivision_name is: 114</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>subdivision_name has ambiguity</td>
+                <td class="passed">Passed</td>
+                <td>There is no ambiguity in subdivision_name and community_name</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>lower case subdivision_name and community_name</td>
+                <td class="passed">Passed</td>
+                <td>There is no subdivision_name and community_name which is in lower case.</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>double spaces in full_street_address</td>
+                <td class="passed">Passed</td>
+                <td>There is no double spaces in full_street_address</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>triple spaces in full_street_address</td>
+                <td class="passed">Passed</td>
+                <td>There is no triple spaces in full_street_address</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>duplication in listing_address table</td>
+                <td class="passed">Passed</td>
+                <td>There is no duplication in listing_address table</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>full_street_address is initcap</td>
+                <td class="passed">Passed</td>
+                <td>full_street_address is initcap</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>null address in listing_address</td>
+                <td class="passed">Passed</td>
+                <td>There is no null address in listing_address</td>
+            </tr>
+        
+            <tr>
+                <td>media</td>
+                <td>Media difference</td>
+                <td class="failed">Failed</td>
+                <td>difference is: -15723</td>
+            </tr>
+        
+            <tr>
+                <td>media</td>
+                <td>mls_number which has media_url but photo_count is missing</td>
+                <td class="passed">Passed</td>
+                <td>There is no mls_number which has media_url but photo_count is missing</td>
+            </tr>
+        
+            <tr>
+                <td>media</td>
+                <td>difference between photos count</td>
+                <td class="passed">Passed</td>
+                <td>There is no difference between photos count</td>
+            </tr>
+        
+            <tr>
+                <td>media</td>
+                <td>Duplication in media table</td>
+                <td class="passed">Passed</td>
+                <td>There is no duplication in media table</td>
+            </tr>
+        
+            <tr>
+                <td>real_estate_office</td>
+                <td>office_name has double spaces</td>
+                <td class="passed">Passed</td>
+                <td>There is no office_name with double spaces.</td>
+            </tr>
+        
+            <tr>
+                <td>real_estate_office</td>
+                <td>Listing and Office association</td>
+                <td class="passed">Passed</td>
+                <td>Listing and Office association is done correctly</td>
+            </tr>
+        
+            <tr>
+                <td>real_estate_office</td>
+                <td>Duplication in real_estate_office</td>
+                <td class="passed">Passed</td>
+                <td>There is no duplication in real_estate_office table</td>
+            </tr>
+        
+            <tr>
+                <td>real_estate_office</td>
+                <td>full_street_address in real_estate_office with double spaces</td>
+                <td class="passed">Passed</td>
+                <td>There is no full_street_address in real_estate_office with double spaces</td>
+            </tr>
+        
+            <tr>
+                <td>Agent Table</td>
+                <td>Duplication in Agent Table</td>
+                <td class="passed">Passed</td>
+                <td>There is no duplication in agent table</td>
+            </tr>
+        
+            <tr>
+                <td>Agent Table</td>
+                <td>Listing and Agent association</td>
+                <td class="passed">Passed</td>
+                <td>Listing and Agent association is done correctly</td>
+            </tr>
+        
+            <tr>
+                <td>Agent Table</td>
+                <td>Double space in agent</td>
+                <td class="passed">Passed</td>
+                <td>There is no agent with double space</td>
+            </tr>
+        
+            <tr>
+                <td>Agent Table</td>
+                <td>Agent Full Name is initcap</td>
+                <td class="failed">Failed</td>
+                <td>Agent Full Name is not initcap.</td>
+            </tr>
+        
+            <tr>
+                <td>Agent Table</td>
+                <td>NULL in agent full_name</td>
+                <td class="passed">Passed</td>
+                <td>There is no NULL in agent full_name</td>
+            </tr>
+        
+            <tr>
+                <td>listing_address</td>
+                <td>ambiguity in agent full_name</td>
+                <td class="passed">Passed</td>
+                <td>There is no ambiguity in agent full_name</td>
+            </tr>
+        
+        </table>
+        <footer>
+            <p>Report generated on: 2025-01-13 02:25:38.800163</p>
+        </footer>
+    </body>
+    </html>
+    

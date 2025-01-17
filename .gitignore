@@ -1,0 +1,10 @@
+.env
+pentaho_scripts/pentaho_trans_to_sql.py
+pentaho_scripts/mappings_loading.py
+pentaho_scripts/generate_query.py
+pentaho_scripts/Mapping_to_csv.py
+devSide_QA/tables/agent_2.py
+attribute_mappings.py
+metadata_testing.py
+API/api_testing.py
+data_del/data_del.py
