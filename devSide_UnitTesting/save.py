@@ -1,7 +1,7 @@
 import os
 
 def save_html_report(file_name, html_content):
-    save_path = r"C:\Users\Personal\OneDrive\Desktop\Serverless\Migrations\Scripts\devSide_QA\Reports"
+    save_path = r"C:\Users\Personal\OneDrive\Desktop\Serverless\Migrations\Scripts\devSide_UnitTesting\Reports"
     full_file_path = os.path.join(save_path, file_name)
     
     try:
